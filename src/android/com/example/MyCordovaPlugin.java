@@ -34,8 +34,14 @@ public class MyCordovaPlugin extends CordovaPlugin {
       // An example of returning data back to the web layer
       final PluginResult result = new PluginResult(PluginResult.Status.OK, (new Date()).toString());
       callbackContext.sendPluginResult(result);
+    } else if(action.equals("reverse")){
+      String str = args.getString(0);
+      String nstr = new StringBuilder(str).reverse().toString();
+
+      final PluginResult result = new PluginResult(PluginResult.Status.OK, nstr);
+      callbackContext.sendPluginResult(result);
     }
     return true;
   }
-
+  
 }

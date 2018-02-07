@@ -9,6 +9,9 @@ var MyCordovaPlugin = {
   },
   getDate: function(cb) {
     exec(cb, null, PLUGIN_NAME, 'getDate', []);
+  },
+  reverse: function(str, cb){
+    exec(cb, null, PLUGIN_NAME, 'reverse', [str]);
   }
 };
 
