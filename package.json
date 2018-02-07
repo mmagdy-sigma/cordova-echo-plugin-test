@@ -1,12 +1,25 @@
 {
-  "name": "cordova-plugin-template",
+  "name": "my-cordova-plugin",
   "version": "1.0.0",
+  "description": "Cordova Plugin Template ======",
   "cordova": {
-    "id": "cordova-plugin-template",
+    "id": "my-cordova-plugin",
     "platforms": [
-      "android",
-      "ios",
+      "android"
     ]
   },
-  "description": "A starting point for a Cordova Plugin"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmagdy-sigma/cordova-echo-plugin-test.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "mmagdy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mmagdy-sigma/cordova-echo-plugin-test/issues"
+  },
+  "homepage": "https://github.com/mmagdy-sigma/cordova-echo-plugin-test#readme"
 }
